@@ -1,5 +1,8 @@
 import math
 
+def tk():
+    print(f"Thanks for using it")
+
 def add(x, y):
     return x + y
 
@@ -44,26 +47,32 @@ while True:
         if choice == '1':
             result = add(num1, num2)
             print("Result:", result)
+            tk()
         elif choice == '2':
             result = subtract(num1, num2)
             print("Result:", result)
+            tk()
         elif choice == '3':
             result = multiply(num1, num2)
             print("Result:", result)
+            tk()
         elif choice == '4':
             result = divide(num1, num2)
             print("Result:", result)
+            tk()
 
     elif choice == '5':
         num = float(input("Enter a number: "))
         result = square_root(num)
         print("Result:", result)
+        tk()
 
     elif choice == '6':
         num1 = float(input("Enter base number: "))
         num2 = float(input("Enter exponent number: "))
         result = power(num1, num2)
         print("Result:", result)
+        tk()
 
     else:
         print("Invalid choice. Please try again.")
